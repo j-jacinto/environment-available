@@ -12,16 +12,25 @@ public enum MsType {
     PARTNER_BONUS_B2C("partner-bonus-b2c"),
     PARTNER_BACKOFFICE("partner-backoffice"),
     CUSTOMER_B2B("customer-b2b"),
-    CUSTOMER_PROFILE("customer-profile"),
-    CUSTOMER("customer"),
-    PARTNER_BONUS_B2B("partner-bonus-b2b"),
-    PARTNER_BILLING("partner-billing"),
-    PARTNER_WORKLOG("partner-worklog"),
-    ACCESS_MANAGEMENT("access-management"),
-    CARDLINKED("cardlinked"),
-    COUPON_MANAGEMENT("coupon-management"),
-    PARTNER_INFO("partner-info"),
-    ACCRUAL_CALCULATOR("accrual-calculator");
+    CUSTOMER_PROFILE("customer-profile");
+//    CUSTOMER("customer")
+//    PARTNER_BILLING("partner-billing");
+//    PARTNER_BONUS_B2B("partner-bonus-b2b"),
+//    PARTNER_WORKLOG("partner-worklog"),
+//    ACCESS_MANAGEMENT("access-management"),
+//    CARDLINKED("cardlinked"),
+//    COUPON_MANAGEMENT("coupon-management"),
+//    PARTNER_INFO("partner-info"),
+//    ACCRUAL_CALCULATOR("accrual-calculator")
+
+
+    public String getDescription() {
+        return description;
+    }
+
+    public void setDescription(String description) {
+        this.description = description;
+    }
 
     private String description;
 }
